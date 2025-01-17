@@ -178,13 +178,13 @@ The **Phoronix Test Suite** is an open-source benchmarking framework that allows
 Before running benchmarks, you need to install the **Phoronix Test Suite** on your system. If you haven't already installed it, use the following command:
 
 #### **On CentOS/RHEL (Red Hat-based distributions)**:
-```bash
-# yum install -y phoronix-test-suite
+```yml
+ yum install -y phoronix-test-suite
 ```
 
 #### **On Ubuntu/Debian-based distributions**:
-```bash
-# apt-get install phoronix-test-suite
+```yml
+  apt-get install phoronix-test-suite
 ```
 
 This will install the suite along with necessary dependencies.
@@ -196,8 +196,8 @@ This will install the suite along with necessary dependencies.
 Once Phoronix Test Suite is installed, you can run it via the command-line interface (CLI). Here's a quick guide to help you run a benchmark.
 
 #### **Basic Command**:
-```bash
-# phoronix-test-suite --help
+```yml
+  phoronix-test-suite --help
 ```
 
 This will show all available commands and options for the Phoronix Test Suite. The main functionality includes:
@@ -208,8 +208,8 @@ This will show all available commands and options for the Phoronix Test Suite. T
 - Viewing available tests
 
 #### **Interactive Mode**:
-```bash
-# phoronix-test-suite interactive
+```yml
+  phoronix-test-suite interactive
 ```
 
 This will start an interactive mode where you can select from various options.
@@ -220,7 +220,7 @@ This will start an interactive mode where you can select from various options.
 
 After running `phoronix-test-suite interactive`, you will see the following menu:
 
-```plaintext
+```yml
 1: Run A Test / Benchmark
 2: Run A Suite      [A Collection Of Tests]
 3: Run A Stress Test      [Concurrent Benchmarks For Heavy System Load]
@@ -235,7 +235,7 @@ After running `phoronix-test-suite interactive`, you will see the following menu
 #### **Select Task**:
 To run a benchmark, select option **1** (`Run A Test / Benchmark`).
 
-```plaintext
+```yml
 Select Task: 1
 ```
 
@@ -247,7 +247,7 @@ After selecting **1**, the system will display a list of over **500 available te
 
 Example:
 
-```plaintext
+```yml
 Select Test(s): 19
 ```
 
@@ -266,7 +266,7 @@ Some tests may require additional dependencies to be installed (such as compiler
 
 If these dependencies are missing, Phoronix Test Suite will prompt you to install them. It will also ask for **sudo privileges** to install the necessary packages.
 
-```plaintext
+```yml
 The following dependencies are needed and will be installed:
 - gcc
 - gcc-c++
@@ -278,7 +278,7 @@ The following dependencies are needed and will be installed:
 ```
 
 You will be asked to enter the **sudo password** for installation:
-```plaintext
+```yml
 Please enter your SUDO password below:
 Password: redhat
 ```
@@ -298,8 +298,8 @@ After completing the benchmark, the Phoronix Test Suite will display the results
 
 To view the results of the benchmark after completion, you can use the following command:
 
-```bash
-# phoronix-test-suite results
+```yml
+  phoronix-test-suite results
 ```
 
 This will display a list of completed benchmark tests along with their scores and performance details.
@@ -312,14 +312,14 @@ Phoronix allows you to save your benchmark results in a detailed report format (
 
 To save your results:
 
-```bash
-# phoronix-test-suite results-to-html <benchmark_id> > result.html
+```yml
+  phoronix-test-suite results-to-html <benchmark_id> > result.html
 ```
 
 You can also upload the results to the Phoronix website to compare with other systems:
 
-```bash
-# phoronix-test-suite upload <benchmark_id>
+```yml
+  phoronix-test-suite upload <benchmark_id>
 ```
 
 ---
@@ -335,11 +335,11 @@ To access the Web UI:
    
 2. Start the Phoronix Test Suite web service:
    ```bash
-   # phoronix-test-suite web-server start
+     phoronix-test-suite web-server start
    ```
 
 3. Open a web browser and go to the following URL:
-   ```plaintext
+   ```yml
    http://localhost:4000
    ```
 
@@ -360,28 +360,28 @@ To access the Web UI:
 ### **9. Common Phoronix Commands**
 
 - **List available tests**:
-  ```bash
-  # phoronix-test-suite list-tests
+  ```yml
+    phoronix-test-suite list-tests
   ```
 
 - **Search for a specific test**:
-  ```bash
-  # phoronix-test-suite search <test_name>
+  ```yml
+    phoronix-test-suite search <test_name>
   ```
 
 - **View hardware/software information**:
-  ```bash
-  # phoronix-test-suite hardware-info
+  ```yml
+    phoronix-test-suite hardware-info
   ```
 
 - **Run stress tests**:
-  ```bash
-  # phoronix-test-suite run-stress
+  ```yml
+    phoronix-test-suite run-stress
   ```
 
 - **Run a suite of tests**:
-  ```bash
-  # phoronix-test-suite run <suite_name>
+  ```yml
+    phoronix-test-suite run <suite_name>
   ```
 
 ---
