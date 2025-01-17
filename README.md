@@ -167,7 +167,7 @@ Whether you're evaluating the performance of your new server, comparing hardware
 
 
 
-### **Benchmarking with Phoronix Test Suite - Step-by-Step Implementation**  
+##   --------- **Benchmarking with Phoronix Test Suite - Step-by-Step Implementation**  ---------
 
 The **Phoronix Test Suite** is an open-source benchmarking framework that allows users to run a variety of system tests and benchmarks on Linux, Windows, and macOS. Below is a concise explanation of how to install, run, and manage benchmarking tasks with Phoronix Test Suite.
 
